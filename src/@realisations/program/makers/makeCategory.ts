@@ -7,7 +7,7 @@ export function makeWordCategory(description: CategoryDescription): HTMLElement 
         tagName: "article",
         className: "category",
         children: [
-            { tagName: "h1", className: "_header-1", text: description.title },
+            { tagName: "h1", className: "_header-1", id: description.title, text: description.title },
             { tagName: "div", className: "category_sections", children: description.sections.map(makeWordSection) },
         ],
     });

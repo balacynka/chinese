@@ -13,26 +13,27 @@
         <link rel="stylesheet" href="css/index.css" />
     </head>
     <body class="page">
-        <main class="page_categories"></main>
-
-        <aside class="page_menu menu" id="menu">
-            <h1 class="_header-2">Content</h1>
-            <nav class="navigation">
-                <div class="navigation_category" id="navigation_category__words">
-                    <h2 class="_bold-text">Words</h2>
+        <header class="header page_header">
+            <div class="page_container header_container">
+                <p class="_bold-text header_current-section">Current section</p>
+                <div class="header_icon header_icon__open">
+                    <!-- =require ./@realisations/menu.svg -->
                 </div>
-                <div class="navigation_category" id="navigation_category__rules">
-                    <h2 class="_bold-text">Rules</h2>
+                <div class="header_icon header_icon__close">
+                    <!-- =require ./@realisations/x-mark.svg -->
                 </div>
+            </div>
+        </header>
+        <div class="page_container page_content-wrapper">
+            <main class="page_categories"></main>
+            <nav class="page_nav nav" data-pointer-offset="0">
+                <div class="nav_links-wrapper">
+                    <div class="nav_links"></div>
+                    <div class="nav_links nav_links__shadow"></div>
+                </div>
+                <div class="nav_scrollbar"><div class="nav_scrollbar-point"></div></div>
             </nav>
-
-            <button class="menu_button menu_button__open" id="menu-open-button">
-                <!-- =require ./@realisations/menu.svg -->
-            </button>
-            <button class="menu_button menu_button__close" id="menu-close-button">
-                <!-- =require ./@realisations/x-mark.svg -->
-            </button>
-        </aside>
+        </div>
 
         <!-- <script src="js/global.js"></script> -->
         <script src="js/index.js"></script>

@@ -1,0 +1,32 @@
+.header {
+    background-color: var(--overlay-dark);
+    display: none;
+
+    &_container {
+        padding-top: calc(12rem / var(--mobile-font-size-uniteless));
+        padding-bottom: calc(12rem / var(--mobile-font-size-uniteless));
+        display: flex;
+        justify-content: space-between;
+    }
+
+    @media (max-width: 500px) {
+        display: block;
+
+        &_icon__close {
+            display: none;
+        }
+
+        .page:has(.nav__mobile-active) & {
+            background: linear-gradient(90deg, var(--surface) 0%, var(--base) 50%, var(--base) 100%);
+
+            &_icon {
+                &__open {
+                    display: none;
+                }
+                &__close {
+                    display: block;
+                }
+            }
+        }
+    }
+}

@@ -5,17 +5,19 @@ html {
 }
 
 .page {
-    max-width: calc(1440rem / var(--desktop-font-size-uniteless));
-    margin: 0 auto;
-    padding: var(--current-padding);
-
     background-color: var(--background-color);
     color: var(--text-color);
 
     font-size: inherit;
-    font-family: "Ubuntu", serif;
+    font-family: "Ubuntu", sans-serif;
     line-height: 130%;
     letter-spacing: 0.02rem;
+
+    &_container {
+        max-width: calc(1440rem / var(--desktop-font-size-uniteless));
+        margin: 0 auto;
+        padding: var(--current-padding);
+    }
 }
 
 ._header-1,
