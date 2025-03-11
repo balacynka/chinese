@@ -1,0 +1,49 @@
+html {
+    $diff: calc(var(--desktop-font-size-uniteless) - var(--mobile-font-size-uniteless));
+    $t: calc((100vw - 412px) / (1440 - 412));
+    font-size: clamp(var(--mobile-font-size), calc(var(--mobile-font-size) + $diff * $t), var(--desktop-font-size));
+}
+
+.page {
+    max-width: calc(1440rem / var(--desktop-font-size-uniteless));
+    margin: 0 auto;
+    padding: var(--current-padding);
+
+    background-color: var(--background-color);
+    color: var(--text-color);
+
+    font-size: inherit;
+    font-family: "Ubuntu", serif;
+    line-height: 130%;
+    letter-spacing: 0.02rem;
+}
+
+._header-1,
+._header-2,
+._bold-text {
+    font-weight: bold;
+}
+._header-1,
+._hieroglyph {
+    line-height: 105%;
+    letter-spacing: -0.015rem;
+}
+._header-1 {
+    font-size: var(--h1-font-size);
+    margin-bottom: calc(28rem / var(--mobile-font-size-uniteless));
+}
+._header-2 {
+    font-size: var(--h2-font-size);
+    margin-bottom: calc(20rem / var(--mobile-font-size-uniteless));
+    line-height: 110%;
+    letter-spacing: -0.01rem;
+}
+._hieroglyph {
+    font-size: var(--hieroglyph-font-size);
+}
+._medium-text {
+    font-weight: 500;
+}
+._label {
+    font-size: var(--label-font-size);
+}

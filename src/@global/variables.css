@@ -1,0 +1,39 @@
+:root {
+    /* overall colors */
+    /* --overlay-light: #383b40; */
+    --overlay-dark: #2d2f34;
+    --surface: #27292d;
+    /* --base: #1f2023; */
+    /* --black: #080808; */
+    --white: #fcfcfc;
+    /* --green: #0dd449; */
+    --yellow: #d4ac0d;
+    --weak-yellow: #f6db6f;
+    --red: #f57070;
+
+    /* background colors */
+    --background-color: var(--surface);
+    --menu-mobile-background-color: var(--overlay-dark);
+    --menu-button-background-color: var(--yellow);
+
+    /* text colors */
+    --text-color: var(--white);
+    --pinyin-color: var(--red);
+    --translation-list-numbers-color: var(--weak-yellow);
+
+    /* font sizes */
+    --mobile-font-size: 20px;
+    --desktop-font-size: 24px;
+    --label-font-size: 0.8rem;
+    --h2-font-size: 1.618rem;
+    --h1-font-size: calc(1rem * pow(1.618, 2));
+    --hieroglyph-font-size: calc(1rem * pow(1.618, 2));
+
+    --mobile-font-size-uniteless: 20;
+    --desktop-font-size-uniteless: 24;
+
+    /* other */
+    --desktop-padding: calc(48rem / var(--desktop-font-size-uniteless));
+    --mobile-padding: calc(28rem / var(--mobile-font-size-uniteless));
+    --current-padding: clamp(var(--mobile-padding), 4%, var(--desktop-padding));
+}
