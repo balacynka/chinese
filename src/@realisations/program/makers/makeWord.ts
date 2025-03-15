@@ -45,7 +45,7 @@ export function makeWord(description: WordDescription): HTMLElement {
     // assembly
     return makeElement({
         tagName: "div",
-        className: `word word_size-${description.size}`,
+        className: `word word__size-${description.size}`,
         children: [chinese, translations],
     });
 }
