@@ -12,6 +12,7 @@ export interface WordDescription {
     translations?: string[]; // []
     size?: 1 | 2 | 3 | 4; // 1
     compact?: boolean; // true
+    lesson?: number; // undefined
 }
 
 export type TableDescription = string[][];
