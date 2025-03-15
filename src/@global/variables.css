@@ -1,11 +1,11 @@
 :root {
     /* overall colors */
-    /* --overlay-light: #383b40; */
+    --overlay-light: #383b40;
     --overlay-dark: #2d2f34;
     --surface: #27292d;
     --base: #1f2023;
     --base0: #1f202300;
-    /* --black: #080808; */
+    --black: #080808;
     --white: #fcfcfc;
     /* --green: #0dd449; */
     --yellow: #d4ac0d;

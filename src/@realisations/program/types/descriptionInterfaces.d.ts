@@ -14,11 +14,14 @@ export interface WordDescription {
     compact?: boolean; // true
 }
 
+export type TableDescription = string[][];
+
+export type SectionContent = (WordDescription | TableDescription | string)[];
 export interface SectionDescription {
     title: string;
-    words: WordDescription[];
-    description?: string;
+    content: SectionContent;
 }
+
 export type CategoryDescription = {
     title: string;
     sections: SectionDescription[];
