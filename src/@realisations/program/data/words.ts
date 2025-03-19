@@ -4,7 +4,7 @@ export const wordCategoryDescription: CategoryDescription = {
     title: "H1",
     sections: [
         {
-            title: "Lesson 10",
+            title: "Lesson 1",
             content: [
                 { hieroglyph: "课", pinyin: "kè", translations: ["Пара"], lesson: 10 },
                 { hieroglyph: "帮助", pinyin: "bāngzhù", translations: ["Помощь"], lesson: 10 },
