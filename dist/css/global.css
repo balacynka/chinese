@@ -1,0 +1,173 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus,
+:active {
+    outline: none;
+}
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 16px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+button {
+    cursor: pointer;
+}
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+a,
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+ul li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+:root {
+    /* overall colors */
+    --overlay-light: #383b40;
+    --overlay-dark: #2d2f34;
+    --surface: #27292d;
+    --base: #1f2023;
+    --base0: #1f202300;
+    --black: #080808;
+    --white: #fcfcfc;
+    /* --green: #0dd449; */
+    --yellow: #d4ac0d;
+    --weak-yellow: #f6db6f;
+    --red: #f57070;
+
+    /* background colors */
+    --background-color: var(--surface);
+    --menu-mobile-background-color: var(--overlay-dark);
+    --menu-button-background-color: var(--yellow);
+
+    /* text colors */
+    --text-color: var(--white);
+    --pinyin-color: var(--red);
+    --translation-list-numbers-color: var(--weak-yellow);
+
+    /* font sizes */
+    --mobile-font-size: 20px;
+    --desktop-font-size: 24px;
+    --label-font-size: 0.8rem;
+    --h2-font-size: 1.618rem;
+    --h1-font-size: calc(1rem * pow(1.618, 2));
+    --hieroglyph-font-size: calc(1rem * pow(1.618, 2));
+
+    --mobile-font-size-uniteless: 20;
+    --desktop-font-size-uniteless: 24;
+
+    /* other */
+    --desktop-padding: calc(48rem / var(--desktop-font-size-uniteless));
+    --mobile-padding: calc(28rem / var(--mobile-font-size-uniteless));
+    --current-padding: clamp(var(--mobile-padding), 4%, var(--desktop-padding));
+}
+
+html {
+  font-size: clamp(var(--mobile-font-size), var(--mobile-font-size) + (var(--desktop-font-size-uniteless) - var(--mobile-font-size-uniteless)) * (100vw - 412px) / 1028, var(--desktop-font-size));
+}
+
+.page {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-size: inherit;
+  font-family: "Ubuntu", sans-serif;
+  line-height: 130%;
+  letter-spacing: 0.02rem;
+}
+.page_container {
+  max-width: calc(1440rem / var(--desktop-font-size-uniteless));
+  margin: 0 auto;
+  padding: var(--current-padding);
+}
+
+._header-1,
+._header-2,
+._bold-text {
+  font-weight: bold;
+}
+
+._header-1,
+._hieroglyph {
+  line-height: 105%;
+  letter-spacing: -0.015rem;
+}
+
+._header-1 {
+  font-size: var(--h1-font-size);
+  margin-bottom: calc(28rem / var(--mobile-font-size-uniteless));
+}
+
+._header-2 {
+  font-size: var(--h2-font-size);
+  margin-bottom: calc(20rem / var(--mobile-font-size-uniteless));
+  line-height: 110%;
+  letter-spacing: -0.01rem;
+}
+
+._hieroglyph {
+  font-size: var(--hieroglyph-font-size);
+}
+
+._medium-text {
+  font-weight: 500;
+}
+
+._label {
+  font-size: var(--label-font-size);
+}
