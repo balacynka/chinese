@@ -21,6 +21,22 @@ export const ruleCategoryDescription: CategoryDescription = {
                 { hieroglyph: "百", pinyin: "bǎi", translations: ["100"] },
             ],
         },
+        {
+            title: "Lesson 11",
+            content: [
+                { hieroglyph: "的", pinyin: "de", translations: ["Притяжательная частица"] },
+                'When a verb or verb phrase is used as an attributive modifier, "的" should be put between the' +
+                    "modifier and the word modifier. For example:",
+                [
+                    ["Atribute modifier", "的", "Word Modified "],
+                    ["新买", "的", "自行车"],
+                    ["Недавно купленный", "-", "велосипед"],
+                    ["我妈妈做", "的", "饭"],
+                    ["Моя мама готовит", "-", "еду"],
+                    ["和你一起唱歌", "的", "人"],
+                ],
+            ],
+        },
         // { title: "Пусто", content: [] },
     ],
 };
